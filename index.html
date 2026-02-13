@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Javascript Assignment 3- Coding Tasks</title>
+
+</head>
+<body>
+    <h1> Javascript Assignment 3 </h1>
+    <p> Open the browser's developer console to view the results</p>
+</body>
+<head>
+
+<script>
+
+// Task 1: Countries array
+let countries = ["India", "Canada", "Brazil", "Japan", "Germany", "Australia"];
+countries.forEach(function(country) {
+    console.log(country);
+});
+
+// Task 2: Toothbrush calculation
+function calculateNumberToothbrushForLife(age, amountPerMonth) {
+    let maxAge = 98;
+    let totalToothbrushes = (maxAge - age) * 12 * amountPerMonth;
+    console.log("You will need " + totalToothbrushes +
+                " toothbrushes to last you until the age of " + maxAge);
+}
+
+// Call function 2 times
+calculateNumberToothbrushForLife(25, 1);
+calculateNumberToothbrushForLife(40, 2);
+
+</script>
+
+</head>
+</html>
